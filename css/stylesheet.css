@@ -1,0 +1,10 @@
+.avatar {
+  float: left;
+  height: 64px;
+}
+
+.channel-name {
+  margin-top: 5px;
+  padding-left: 15px;
+  display: inline-block;
+}
