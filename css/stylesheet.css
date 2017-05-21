@@ -24,10 +24,19 @@ a {
   height: 64px;
 }
 
-.channel-name {
-  margin-top: 5px;
+.channel-info {
+  margin-top: 0;
   padding-left: 15px;
   display: inline-block;
+}
+
+.channel-name {
+  margin: 0;
+  padding-top: 5px;
+}
+
+.channel-desc {
+  margin: 0;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus,
