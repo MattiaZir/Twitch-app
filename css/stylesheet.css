@@ -1,3 +1,24 @@
+body {
+  background-color: #4A4063;
+}
+
+a {
+  color: #4A4063;
+}
+
+#users-list {
+  margin-top: 5px;
+}
+
+#users-list li {
+  background-color: #FAF9FB;
+}
+
+.well {
+  margin-top: 20px;
+  background-color: #C8C6D7;
+}
+
 .avatar {
   float: left;
   height: 64px;
@@ -7,4 +28,15 @@
   margin-top: 5px;
   padding-left: 15px;
   display: inline-block;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+  color: #FAF9FB;
+  background-color: #4A4063;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: #FAF9FB;
+  color: #4A4063;
 }
