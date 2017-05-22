@@ -22,6 +22,7 @@ a {
 .avatar {
   float: left;
   height: 64px;
+  width: 64px;
 }
 
 .channel-info {

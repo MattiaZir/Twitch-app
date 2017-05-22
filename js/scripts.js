@@ -13,6 +13,10 @@ function createListElement(listJSON) {
 }
 
 function formListString(jsonObject) {
+  if(jsonObject.avatar === null) {
+    jsonObject.avatar = "https://static-cdn.jtvnw.net/jtv-static/404_preview-1920x1080.png";
+  }
+
   return "<li class='list-group-item clearfix'> \
     <img src='" + jsonObject.avatar + "' class='avatar img-rounded'/> \
     <div class='channel-info'> \
@@ -24,30 +28,32 @@ function formListString(jsonObject) {
 
 function getChannelInfo(name) {
   $.getJSON(baseURL + 'streams/' + name + '?callback=?', function(data) {
-    var listJSON;
 
     if(data.stream !== null) {
       channel = data.stream.channel;
       // Get the useful information in a slimmer JSON object
-      listJSON = {
+      var listJSON = {
         avatar: channel.logo,
         channel_name: channel.display_name,
         channel_desc: channel.status,
         channel_url: channel.url
       }
+
+      createListElement(listJSON);
     }
     else {
         $.getJSON(baseURL + 'channels/' + name + '?callback=?', function(data) {
           console.log(data.logo)
-          listJSON = {
+          var listJSON = {
             avatar: data.logo,
             channel_name: data.display_name,
             channel_desc: "Offline",
             channel_url: data.url
           }
+
+          createListElement(listJSON);
         });
     }
 
-    createListElement(listJSON);
   });
 }
