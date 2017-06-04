@@ -1,71 +1,101 @@
-html {
-  position: relative;
+html
+{
+    position: relative;
 }
 
-body {
-  background-color: #4A4063;
+body
+{
+    background-color: #352e5b;
 }
 
-a {
-  color: #4A4063;
+a
+{
+    color: #352e5b;
 }
 
-.users-list {
-  padding-left: 0;
-  margin-top: 5px;
+.users-list
+{
+    margin-top: 5px;
+    padding-left: 0;
 }
 
-#users-list li {
-  background-color: #FAF9FB;
+#users-list li
+{
+    background-color: #faf9fb;
 }
 
-.well {
-  margin-top: 20px;
-  background-color: #C8C6D7;
+.well
+{
+    margin-top: 40px;
+
+    border: none;
+    border-radius: 0;
+    background-color: #d8d8f6;
 }
 
-.well h1 {
-  margin-top: 5px;
-  padding-bottom: 10px;
-  color: #4A4063;
+.well h1
+{
+    margin-top: 5px;
+    padding-bottom: 10px;
+
+    color: #352e5b;
 }
 
-.avatar {
-  float: left;
-  height: 64px;
-  width: 64px;
+.avatar
+{
+    float: left;
+
+    width: 64px;
+    height: 64px;
 }
 
-.channel-info {
-  margin-top: 0;
-  padding-left: 15px;
-  display: inline-block;
+.channel-info
+{
+    display: inline-block;
+
+    margin-top: 0;
+    padding-left: 15px;
 }
 
-.channel-name {
-  margin: 0;
-  padding-top: 5px;
+.channel-name
+{
+    margin: 0;
+    padding-top: 5px;
 }
 
-.channel-desc {
-  margin: 0;
+.channel-desc
+{
+    margin: 0;
 }
 
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus,
-.nav-pills>li.active>a:hover {
-  color: #FAF9FB;
-  background-color: #4A4063;
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover
+{
+    color: #faf9fb;
+    background-color: #352e5b;
 }
 
-.nav>li>a:focus, .nav>li>a:hover {
-  background-color: #FAF9FB;
-  color: #4A4063;
+.nav > li > a:focus,
+.nav > li > a:hover
+{
+    color: #352e5b;
+    background-color: #faf9fb;
 }
 
 
-.footer {
-  position: absolute;
-  bottom: -20px;
-  width: 100%;
-  color: #FFFFFF;
+.footer
+{
+    position: absolute;
+    bottom: -20px;
+
+    width: 100%;
+
+    color: #fff;
+}
+
+.list-group-item:first-child,
+.list-group-item:last-child
+{
+    border-radius: 0;
 }
