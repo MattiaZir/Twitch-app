@@ -1,36 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-  crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <meta charset="UTF-8">
+  <title>Twitch App</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
+      <link rel="stylesheet" href="css/style.css">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Night_aye's Twitch Viewer</title>
+  
 </head>
+
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-8 col-md-offset-2">
+  <div class="row">
+    <div class="col-sm-12 col-md-8 col-md-offset-2">
+      <div class="well">
+        <h1 class="text-center">Twitch App Viewer</h1>
 
-        <div class="well hidden-md-down">
-          <ul class="nav nav-pills">
-            <li role="presentation" class="active"><a href="#">All</a></li>
-            <li role="presentation"><a href="#">Online</a></li>
-            <li role="presentation"><a href="#">Offline</a></li>
-          </ul>
+        <!-- Pills navigation
+          ===============================-->
+        <ul class="nav nav-pills nav-justified">
+          <li role="presentation" class="active">
+            <a href="#all" data-toggle="tab">All</a>
+          </li>
+          <li role="presentation">
+            <a data-toggle="tab" href="#online">Online</a>
+          </li>
+          <li role="presentation">
+            <a data-toggle="tab" href="#offline">Offline</a>
+          </li>
+        </ul>
 
-          <ul id="users-list" class="list-group">
-          </ul>
+        <!-- Pills panes
+          ===============================-->
+        <div class="tab-content">
+          <div id="all" class="tab-pane active">
+            <ul id="all-list" class="users-list">
+            </ul>
+          </div>
+
+          <div id="online" class="tab-pane">
+            <ul id="online-list" class="users-list">
+            </ul>
+          </div>
+
+          <div id="offline" class="tab-pane">
+            <ul id="offline-list" class="users-list">
+            </ul>
+          </div>
+
         </div>
 
       </div>
     </div>
-  </body>
-  </html>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="text-center">Created by Mattia Zirpoli</p>
+  </div>
+</footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
